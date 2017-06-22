@@ -9,18 +9,21 @@
 
         body, html {
             margin: 0;
+			height: 248px;
+			width: 554px;
         }
 
         html {
             background-position: bottom right;
             background-repeat: no-repeat;
             box-sizing: border-box;
-            height: 100%;
             background-color: transparent;
         }
 
         #wrapper {
             background: rgba(0, 0, 0, 0.35);
+			width: 100%;
+			height: 100%;
             box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.35);
             border-radius: 4px;
             margin: 12px;
@@ -222,11 +225,6 @@
 
             var combatantIndex = 0;
             for (var combatantName in data.Combatant) {
-			
-				
-				//if(combatantIndex >= 10)
-				//	continue;
-					
                 var combatant = data.Combatant[combatantName];
                 combatant.JobOrName = combatant.Job || combatantName;
                 var egiSearch = combatant.JobOrName.indexOf("-Egi (");
