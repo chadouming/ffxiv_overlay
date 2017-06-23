@@ -9,8 +9,6 @@
 
         body, html {
             margin: 0;
-			height: 248px;
-			width: 554px;
         }
 
         html {
@@ -22,8 +20,7 @@
 
         #wrapper {
             background: rgba(0, 0, 0, 0.35);
-			width: 100%;
-			height: 100%;
+			width: 554px;
             box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.35);
             border-radius: 4px;
             margin: 12px;
@@ -31,7 +28,6 @@
 
         #combatantTable {
             width: 100%;
-            table-layout: fixed;
             border-collapse: collapse;
         }
 
@@ -66,8 +62,9 @@
 
 		#combatantTableHeader {
 			display: block;
-			width: 100%;     // Fill the containing table
+			width: 100%;
 		}
+		
 		#combatantTableBody {
             display: block;
 			height: 175px;
@@ -115,7 +112,7 @@
         function deadAndColorEffect(cell, combatant, index) {
             var deaths = parseInt(combatant["deaths"]);
             if (deaths > 0) {
-				cell.innerHTML = cell.innerHTML + " (<img src='./images/colorbg/death.png' class='deathImg' /> " + deaths + ")";
+				cell.innerHTML = cell.innerHTML + " (<img src='./images/glow-icons-new/death.png' class='deathImg' /> " + deaths + ")";
             }
 			
 			if(combatant.JobOrName == "Sam")
