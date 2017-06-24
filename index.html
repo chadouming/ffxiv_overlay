@@ -83,18 +83,18 @@
             { text: "Name", width: "30vw", align: "left" },
             { text: "DPS (%)" , width: "20vw", align: "left" },
             { text: "Crit(%)", width: "15vw", align: "left" },
-			{ text: "DH(%) - Crit(%)", width: "20vw", align: "left" },
+            { text: "DH(%) - Crit(%)", width: "20vw", align: "left" },
             { text: "HPS (%)", width: "15vw", align: "left" },
         ];
 
         var bodyDefine =
         [
             { text: rankingText, width: "5vw", align: "center" },
-            { html: "<img src='images/glow-icons-new/{JobOrName}.png' height=100% width=auto onerror='this.src=images/glow-icons-new/error.png'/>", align: "center", width: "5vw"},
+            { html: "<img src='images/glow-icons-new/{JobOrName}.png' height=100% width=auto onerror=\"this.style.display='none'\" />", align: "center", width: "5vw"},
             { text: "{name}",  align: "left", width: "27vw", effect: deadAndColorEffect},
             { text: "{encdps} ({damage%})", width: "18vw", align: "left" },
             { text: "{crithit%}", width: "15vw", align: "left" },
-			{ text: "{DirectHitPct} - {CritDirectHitPct}", width: "20vw", align: "left" },
+            { text: "{DirectHitPct} - {CritDirectHitPct}", width: "20vw", align: "left" },
             { text: "{enchps} ({healed%})", width: "15vw", align: "left" },
         ];
 
@@ -106,8 +106,7 @@
             var deaths = parseInt(combatant["deaths"]);
             if (deaths > 0) {
 				cell.innerHTML = cell.innerHTML + " (<img src='images/glow-icons-new/death.png' class='deathImg' /> " + deaths + ")";
-            }
-			
+            }			
 			if(combatant.JobOrName == "Sam")
 				cell.closest('tr').style.backgroundColor = "rgba(175, 120, 23, 0.5)";
 			else if(combatant.JobOrName == "Rdm")
@@ -313,7 +312,6 @@
 
             return result;
         }
-
     </script>
 </head>
 <body onload="">
