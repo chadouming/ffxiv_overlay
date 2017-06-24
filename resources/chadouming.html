@@ -9,6 +9,7 @@
 
         body, html {
             margin: 0;
+			height: 222px;
         }
 
         html {
@@ -20,14 +21,13 @@
 
         #wrapper {
             background: rgba(0, 0, 0, 0.35);
-			width: 554px;
             box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.35);
             border-radius: 4px;
+			height: 100%;
             margin: 12px;
         }
 
         #combatantTable {
-            width: 100%;
             border-collapse: collapse;
         }
 
@@ -42,7 +42,6 @@
 		}
 		
 		#combatantTableHeader tr {
-			display: block;
 			white-space: nowrap;
 		}
 		
@@ -59,15 +58,9 @@
             height: 11px;
 			width: 11px;
         }
-
-		#combatantTableHeader {
-			display: block;
-			width: 100%;
-		}
 		
 		#combatantTableBody {
-            display: block;
-			height: 175px;
+			height: 100%;
 			overflow-y: auto;
 			overflow-x: hidden;
         }
@@ -152,6 +145,7 @@
         document.addEventListener("onOverlayDataUpdate", function (e) {
             update(e.detail);
         });
+		
         window.addEventListener("message", function (e) {
             if (e.data.type === "onOverlayDataUpdate") {
                 update(e.data.detail);
@@ -322,7 +316,7 @@
 
     </script>
 </head>
-<body>
+<body onload="window.resizeTo(554, 222)">
     <div id="wrapper">
         <div id="encounter">
             No data to show.
