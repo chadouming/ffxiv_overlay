@@ -9,7 +9,7 @@
 
         body, html {
             margin: 0;
-			height: 217px;
+            height: 217px;
         }
 
         html {
@@ -20,14 +20,16 @@
         }
 
         #wrapper {
+            display: block;
             background: rgba(0, 0, 0, 0.35);
             box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.35);
             border-radius: 4px;
-			height: 100%;
+            height: 100%;
             margin: 12px;
         }
 
         #combatantTable {
+            display: block;
             border-collapse: collapse;
         }
 
@@ -37,32 +39,33 @@
             font-weight: 300;
         }
 		
-		#combatantTableBody tr {
-			white-space: nowrap;
-		}
+        #combatantTableBody tr {
+            white-space: nowrap;
+        }
 		
-		#combatantTableHeader tr {
-			white-space: nowrap;
-		}
+        #combatantTableHeader tr {
+	    white-space: nowrap;
+        }
 		
-		::-webkit-scrollbar {
-			width: 0px;  /* remove scrollbar space */
-			background: transparent;  /* optional: just make scrollbar invisible */
-		}
+        ::-webkit-scrollbar {
+            width: 0px;  /* remove scrollbar space */
+            background: transparent;  /* optional: just make scrollbar invisible */
+        }
 
         #combatantTableBody img {
             height: 20px;
         }
 		
-		#combatantTableBody .deathImg {
+        #combatantTableBody .deathImg {
             height: 11px;
-			width: 11px;
+            width: 11px;
         }
 		
-		#combatantTableBody {
-			height: 100%;
-			overflow-y: auto;
-			overflow-x: hidden;
+        #combatantTableBody {
+            display: block;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 		
         #encounter, #combatantTableHeader * {
