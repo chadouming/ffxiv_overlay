@@ -53,11 +53,6 @@
         #combatantTableBody img {
             height: 20px;
         }
-
-        #combatantTableBody img:before {
-            background-image: url(images/glow-icons-new/error.png);
-            height: 20px;
-        }
 		
         #combatantTableBody .deathImg {
             height: 11px;
@@ -94,7 +89,7 @@
         var bodyDefine =
         [
             { text: rankingText, width: "5vw", align: "center" },
-            { html: "<img src='images/glow-icons-new/{JobOrName}.png' height=100% width=auto/>", align: "center", width: "5vw"},
+            { html: "<img src='images/glow-icons-new/{JobOrName}.png' height=100% width=auto onerror='this.src=images/glow-icons-new/error.png'/>", align: "center", width: "5vw"},
             { text: "{name}",  align: "left", width: "27vw", effect: deadAndColorEffect},
             { text: "{encdps} ({damage%})", width: "18vw", align: "left" },
             { text: "{crithit%}", width: "15vw", align: "left" },
