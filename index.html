@@ -90,7 +90,7 @@
         var bodyDefine =
         [
             { text: rankingText, width: "5vw", align: "center" },
-            { html: "<img src='./images/glow-icons-new/{JobOrName}.png' height=100% width=auto/>", align: "center", width: "5vw"},
+            { html: "<img src='images/glow-icons-new/{JobOrName}.png' height=100% width=auto/>", align: "center", width: "5vw"},
             { text: "{name}",  align: "left", width: "27vw", effect: deadAndColorEffect},
             { text: "{encdps} ({damage%})", width: "18vw", align: "left" },
             { text: "{crithit%}", width: "15vw", align: "left" },
@@ -105,7 +105,7 @@
         function deadAndColorEffect(cell, combatant, index) {
             var deaths = parseInt(combatant["deaths"]);
             if (deaths > 0) {
-				cell.innerHTML = cell.innerHTML + " (<img src='./images/glow-icons-new/death.png' class='deathImg' /> " + deaths + ")";
+				cell.innerHTML = cell.innerHTML + " (<img src='images/glow-icons-new/death.png' class='deathImg' /> " + deaths + ")";
             }
 			
 			if(combatant.JobOrName == "Sam")
@@ -316,7 +316,7 @@
 
     </script>
 </head>
-<body onload="window.resizeTo(554, 222)">
+<body onload="">
     <div id="wrapper">
         <div id="encounter">
             No data to show.
