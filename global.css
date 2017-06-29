@@ -67,3 +67,72 @@ html {
     text-shadow: -1px 0 2px #795516, 0 1px 2px #795516, 1px 0 2px #795516, 0 -1px 2px #795516;
     font-weight: 300;
 }
+
+#combatantTableBody tr .Sam {
+    background-color: rgba(228, 109, 4, 0.5);
+}
+
+#combatantTableBody tr .Rdm {
+    background-color: rgba(232, 123, 123, 0.5);
+}
+
+#combatantTableBody tr .Ast {
+    background-color: rgba(255, 231, 74, 0.5);
+}
+
+#combatantTableBody tr .Sch {
+    background-color: rgba(134, 87, 255, 0.5);
+}
+
+#combatantTableBody tr .Mch {
+    background-color: rgba(110, 225, 214, 0.5);
+}
+
+#combatantTableBody tr .Drk {
+    background-color: rgba(209, 38, 204, 0.5);
+}
+
+#combatantTableBody tr .Gla,
+#combatantTableBody tr .Pld {
+    background-color: rgba(168, 210, 230, 0.5);
+}
+
+#combatantTableBody tr .Smn,
+#combatantTableBody tr .Acn {
+    background-color: rgba(45, 155, 120, 0.5);
+}
+
+#combatantTableBody tr .War,
+#combatantTableBody tr .Mar {
+    background-color: rgba(207, 38, 33, 0.5);
+}
+
+#combatantTableBody tr .Blm,
+#combatantTableBody tr .Thm {
+    background-color: rgba(165, 121, 214, 0.5);
+}
+
+#combatantTableBody tr .Mnk,
+#combatantTableBody tr .Pgl {
+    background-color: rgba(214, 156, 0, 0.5);
+}
+
+#combatantTableBody tr .Drg,
+#combatantTableBody tr .Lnc {
+    background-color: rgba(65, 100, 205, 0.5);
+}
+
+#combatantTableBody tr .Nin,
+#combatantTableBody tr .Rog {
+    background-color: rgba(175, 25, 100, 0.5);
+}
+
+#combatantTableBody tr .Brd,
+#combatantTableBody tr .Arc {
+    background-color: rgba(145, 186, 94, 0.5);
+}
+
+#combatantTableBody tr .Cnj,
+#combatantTableBody tr .Whm {
+    background-color: rgba(255, 240, 220, 0.5);
+}
