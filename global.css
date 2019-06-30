@@ -56,6 +56,18 @@ html {
     font-weight: 300;
 }
 
+#combatantTableBody tr.Blu {
+    background-color: rgba(65, 105, 225, 0.5);
+}
+
+#combatantTableBody tr.Gnb {
+    background-color: rgba(209, 226, 49, 0.5);
+}
+
+#combatantTableBody tr.Dnc {
+    background-color: rgba(255, 218, 185, 0.5);
+}
+
 #combatantTableBody tr.Sam {
     background-color: rgba(228, 109, 4, 0.5);
 }
